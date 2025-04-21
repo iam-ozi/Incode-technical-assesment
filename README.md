@@ -21,7 +21,7 @@ TLS/domain setup requirements
 
 VPC Design: Two separate VPCs were created (VPC01 and VPC02) with a VPC peering connection between them for cross-VPC communication.
 
-Bastion Hosts: We created Linux-based bastion hosts in both VPCs to allow SSH access to private resources.
+Bastion Hosts: I created Linux-based bastion hosts in both VPCs to allow secure access to private resources.
 
 ECS: A public-facing application layer is hosted on ECS Fargate, with a private layer in the second VPC, securely accessing the database.
 
@@ -43,16 +43,16 @@ MSI installer: https://awscli.amazonaws.com/AWSCLIV2.msi
 pdf viewer extension to view document in vscode
 
 
+# Clone the Repository!!!!
 
-Clone the Repository
-git clone https://github.com/iam-ozi/Incode-technical-assesment.git
-cd Incode-technical-assesment
-cd enviroment/dev
-terraform init
-terraform fmt (optional)
-terraform validate (recommended)
-terraform plan
-terraform apply 
+# git clone https://github.com/iam-ozi/Incode-technical-assesment.git
+# cd Incode-technical-assesment
+# cd enviroment/dev
+# terraform init
+# terraform fmt (optional)
+# terraform validate (recommended)
+# terraform plan
+# terraform apply 
 
 
 # Structure of the Repository!!!!!
@@ -68,6 +68,7 @@ outputs.tf: Definitions for the outputs that Terraform will display after applyi
 terraform.tfvars: File for setting variable values, including region and other environment-specific configurations.
 
 # Modules
+
 vpc/: Contains all resources for creating the VPC, subnets, internet gateway, NAT gateway, route tables, and VPC peering connection.
 
 bastion/: Creates the bastion hosts for SSH access to private resources in the VPCs.
@@ -80,10 +81,10 @@ monitoring/: Configures CloudWatch alarms for various metrics such as EC2 CPU ut
 
 # Some useful commands for testing locally on your cli
 
-SSM into the bastion:
+# SSM into the bastion:
 aws ssm start-session --target <instance-id>
 
-Curl the ALB:
+# Curl the ALB:
 curl -i http://$DNS/
 
 
