@@ -29,6 +29,12 @@ RDS: A MySQL database instance is provisioned in private subnets for high securi
 
 CloudWatch: Alarms are set up for critical metrics such as CPU utilization, latency, and task drift.
 
+Modularity: Used modules and variables, ensuring clean, reusable, and easy to maintain code. 
+Broke down infrastructure into smaller, independent modules for: reusability, seperation of concerns, easy maintenance, enviroment specific configuration. This will ensure scalability and consistency. 
+
+Remote backend: Used AWS S3 bucket for remote backend to store and manage state file.
+This can be very useful for collaboration in large teams, locking mechanism when integrated with DynamoDb, and backup and recovery.  
+
 # Setup Instructions!!!
 
 # Prerequisites #
@@ -42,6 +48,7 @@ MSI installer: https://awscli.amazonaws.com/AWSCLIV2.msi
 
 pdf viewer extension to view document in vscode
 
+Note:: remember to either disable remote backend or create and replace bucket name with your specific AWS account bucket for authentication. 
 
 # Clone the Repository!!!!
 
