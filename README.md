@@ -45,14 +45,21 @@ pdf viewer extension to view document in vscode
 
 # Clone the Repository!!!!
 
-# git clone https://github.com/iam-ozi/Incode-technical-assesment.git
-# cd Incode-technical-assesment
-# cd enviroment/dev
-# terraform init
-# terraform fmt (optional)
-# terraform validate (recommended)
-# terraform plan
-# terraform apply 
+git clone https://github.com/iam-ozi/Incode-technical-assesment.git
+
+cd Incode-technical-assesment
+
+cd enviroment/dev
+
+terraform init
+
+terraform fmt (optional)
+
+terraform validate (recommended)
+
+terraform plan
+
+terraform apply 
 
 
 # Structure of the Repository!!!!!
